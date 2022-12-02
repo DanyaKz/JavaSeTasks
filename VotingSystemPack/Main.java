@@ -89,7 +89,7 @@ public class Main {
             case 6:
                 if (!Objects.isNull(curVoting)) curVoting.finishVoting();
                 Main.conn.close();
-                break;
+                System.exit(1);
             default:
                 adminMenu();
         }
